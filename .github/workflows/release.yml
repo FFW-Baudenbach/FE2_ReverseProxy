@@ -24,7 +24,7 @@ jobs:
         uses: jacobtomlinson/gha-find-replace@master
         with:
           find: "odin568/fe2_reverseproxy:latest"
-          replace: "odin568/fe2_reverseproxy:${{RELEASE_VERSION}}"
+          replace: "odin568/fe2_reverseproxy:${RELEASE_VERSION}"
       - name: Release
         uses: softprops/action-gh-release@v1
         if: startsWith(github.ref, 'refs/tags/')
