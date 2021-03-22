@@ -6,4 +6,5 @@ This solution is based on the following project:
 [docker-nginx-certbot](https://github.com/JonasAlfredsson/docker-nginx-certbot)
 
 ## Usage
-```docker pull odin568/fe2_reverseproxy:latest``` (better concrete version)
+Download latest file from release (or adapt version). Then:  
+```docker-compose up -d```
