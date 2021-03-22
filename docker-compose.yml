@@ -1,1 +1,14 @@
+version: '3.7'
 
+services:
+  fe2_reverseproxy:
+    image: odin568/fe2_reverseproxy:latest
+    container_name: fe2_reverseproxy
+    ports:
+      - 80:80
+      - 443:443
+    restart: always
+    environment:
+      #- STAGING=1
+    volumes:
+      - nginx_secrets:/etc/letsencrypt
