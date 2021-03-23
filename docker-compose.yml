@@ -8,7 +8,12 @@ services:
       - 80:80
       - 443:443
     restart: always
-    environment:
-      #- STAGING=1
+#   Defaults
+#    environment:
+#      - CERTBOT_EMAIL=webmaster@ffw-baudenbach.de
+#      - STAGING=0
+#      - DHPARAM_SIZE=2048
+#      - RSA_KEY_SIZE=2048
+#      - RENEWAL_INTERVAL=8d
     volumes:
-      - nginx_secrets:/etc/letsencrypt
+      - ./nginx_secrets:/etc/letsencrypt
