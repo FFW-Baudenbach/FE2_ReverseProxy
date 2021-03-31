@@ -67,4 +67,4 @@ jobs:
             linux/arm/v7
           push: ${{ github.event_name != 'pull_request' }}
           build-args: BUILDX_QEMU_ENV=true
-          tags: "odin568/fe2_reverseproxy:${RELEASE_VERSION}"
+          tags: odin568/fe2_reverseproxy:${{ RELEASE_VERSION }}
