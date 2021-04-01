@@ -1,7 +1,7 @@
-name: Latest
+name: Dev
 on:
   push:
-    branches: [ main ]
+    branches: [ dev ]
 
   workflow_dispatch:
 
@@ -35,4 +35,4 @@ jobs:
             linux/arm/v7
           push: ${{ github.event_name != 'pull_request' }}
           build-args: BUILDX_QEMU_ENV=true
-          tags: odin568/fe2_reverseproxy:latest
+          tags: odin568/fe2_reverseproxy:dev
