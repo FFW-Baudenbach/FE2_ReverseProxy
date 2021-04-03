@@ -17,3 +17,4 @@ services:
 #      - RENEWAL_INTERVAL=8d
     volumes:
       - ./nginx_secrets:/etc/letsencrypt
+      - ../FE2_Kartengenerierung/maps:/etc/nginx/maps:ro
