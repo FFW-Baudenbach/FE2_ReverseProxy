@@ -15,6 +15,7 @@ services:
 #      - DHPARAM_SIZE=2048
 #      - RSA_KEY_SIZE=2048
 #      - RENEWAL_INTERVAL=8d
+#      - DEBUG=0
     volumes:
       - ./nginx_secrets:/etc/letsencrypt
       - ../FE2_Kartengenerierung/maps:/etc/nginx/maps:ro
