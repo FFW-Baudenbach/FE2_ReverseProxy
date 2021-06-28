@@ -8,9 +8,12 @@ The solution is based on the following project: [JonasAlfredsson/docker-nginx-ce
 This repository builds a docker container on DockerHub (private registry):
 * Based on specific version of ```docker-nginx-certbot```
 * Added our specific nginx configuration
+  *  Reverse Proxy for FE2
+  *  Routes for [FE2_Kartengenerierung](https://github.com/FFW-Baudenbach/FE2_Kartengenerierung)  
+     * Route to static Icons (grabbed by Google Static Maps API)
+     * Also the static Icons itself are added to the container
+     * Route to generated Maps (to be used in static mail image links)
 * Added default environment variables
-* Added Icons used by [FE2_Kartengenerierung](https://github.com/FFW-Baudenbach/FE2_Kartengenerierung)
-This container can then be easily used in our context with the provided ```docker-compose.yml``` file.
 
 ## How to use
 ### First time setup
@@ -19,3 +22,4 @@ This container can then be easily used in our context with the provided ```docke
 ### Starting/Updating container
 * Download latest [docker-compose.yml](https://github.com/odin568/FE2_ReverseProxy/releases). Place alongside folder ```nginx_secrets``` (not inside)
 * Start container with ```docker-compose up -d```
+* Potentially need to adjust paths inside
