@@ -1,5 +1,5 @@
 # FE2_ReverseProxy
-Nginx Reverse Proxy to run dockerized on a RaspberryPi in front of Alamos FE2 providing proper SSL certificates from Let's encrypt.
+Nginx Reverse Proxy to run dockerized on a RaspberryPi in front of [Alamos FE2](https://www.alamos-gmbh.com/service/fe2/) providing proper SSL certificates from Let's encrypt.
 
 ## Acknowledgments and Thanks
 The solution is based on the following project: [JonasAlfredsson/docker-nginx-certbot](https://github.com/JonasAlfredsson/docker-nginx-certbot)  
@@ -8,7 +8,8 @@ The solution is based on the following project: [JonasAlfredsson/docker-nginx-ce
 This repository builds a docker container on DockerHub (private registry):
 * Based on specific version of ```docker-nginx-certbot```
 * Added our specific nginx configuration
-* Added required mail address for certbot
+* Added default environment variables
+* Added Icons used by [FE2_Kartengenerierung](https://github.com/FFW-Baudenbach/FE2_Kartengenerierung)
 This container can then be easily used in our context with the provided ```docker-compose.yml``` file.
 
 ## How to use
