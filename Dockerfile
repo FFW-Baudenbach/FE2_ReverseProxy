@@ -4,3 +4,4 @@ COPY conf.d/* /etc/nginx/conf.d/
 COPY icons /etc/nginx/icons
 RUN mkdir -p /etc/nginx/maps
 ENV CERTBOT_EMAIL=webmaster@ffw-baudenbach.de
+ENV TZ=Europe/Berlin
