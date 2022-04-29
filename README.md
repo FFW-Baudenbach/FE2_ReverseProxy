@@ -13,7 +13,9 @@ This repository builds a docker container on DockerHub (private registry):
      * Route to static Icons (grabbed by Google Static Maps API)
      * Also the static Icons itself are added to the container
      * Route to generated Maps (to be used in static mail image links)
-  *  Route for [FE2_Monitoring](https://github.com/FFW-Baudenbach/FE2_Monitoring) to enable external health check  
+  *  Routes for [FE2_Monitoring](https://github.com/FFW-Baudenbach/FE2_Monitoring)
+      * Route to health endpoint to be checked from external counterpart
+      * Route to dashboard to make it available externally
 * Added default environment variables
 
 ## How to use
