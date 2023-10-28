@@ -17,6 +17,7 @@ This repository builds a docker container on DockerHub (private registry):
       * Route to health endpoint to be checked from external counterpart
       * Route to dashboard to make it available externally
   *  Route for [FE2_Calendar](https://github.com/FFW-Baudenbach/FE2_Calendar)
+  *  Route for [FE2_Documentation](https://github.com/FFW-Baudenbach/FE2_Documentation)
 * Added default environment variables
 
 ## How to use
