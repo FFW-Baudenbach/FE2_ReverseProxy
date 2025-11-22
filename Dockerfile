@@ -1,4 +1,4 @@
-FROM  jonasal/nginx-certbot:6.0.1-nginx1.29.1
+FROM  jonasal/nginx-certbot:6.0.1-nginx1.29.3
 LABEL maintainer="FFW Baudenbach <webmaster@ffw-baudenbach.de>"
 COPY  conf.d/* /etc/nginx/conf.d/
 COPY  icons /etc/nginx/icons
