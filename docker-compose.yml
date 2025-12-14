@@ -1,5 +1,3 @@
-version: '3.7'
-
 services:
   fe2_reverseproxy:
     image: odin568/fe2_reverseproxy:latest
