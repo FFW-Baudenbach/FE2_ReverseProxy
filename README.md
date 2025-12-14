@@ -7,7 +7,7 @@ The solution is based on the following project: [JonasAlfredsson/docker-nginx-ce
 ## How it works
 This repository builds a docker container on DockerHub (private registry):
 * Based on specific version of ```docker-nginx-certbot```
-* Added our specific nginx configurations (splitted in global and per domain)
+* Added our specific nginx configurations split by subdomain:
   *  Reverse Proxy for FE2
   *  Routes for [FE2_Kartengenerierung](https://github.com/FFW-Baudenbach/FE2_Kartengenerierung)  
      * Route to static Icons (grabbed by Google Static Maps API)
