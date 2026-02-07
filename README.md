@@ -9,13 +9,13 @@ This repository builds a docker container on DockerHub (private registry):
 * Based on specific version of ```docker-nginx-certbot```
 * Added our specific nginx configurations split by subdomain:
   *  Reverse Proxy for FE2
-  *  Routes for [FE2_Kartengenerierung](https://github.com/FFW-Baudenbach/FE2_Kartengenerierung)  
-     * Route to static Icons (grabbed by Google Static Maps API)
-     * Also the static Icons itself are added to the container
-     * Route to generated Maps (to be used in static mail image links)
-  *  Routes for [FE2_Monitoring](https://github.com/FFW-Baudenbach/FE2_Monitoring)
-      * Route to health endpoint to be checked from external counterpart
-      * Route to dashboard to make it available externally
+  *  ~~Routes for [FE2_Kartengenerierung](https://github.com/FFW-Baudenbach/FE2_Kartengenerierung)~~
+     * ~~Route to static Icons (grabbed by Google Static Maps API)~~
+     * ~~Also, the static Icons itself are added to the container~~
+     * ~~Route to generated Maps (to be used in static mail image links)~~
+  *  ~~Routes for [FE2_Monitoring](https://github.com/FFW-Baudenbach/FE2_Monitoring)~~
+      * ~~Route to health endpoint to be checked from external counterpart~~
+      * ~~Route to dashboard to make it available externally~~
   *  ~~Route for [FE2_Calendar](https://github.com/FFW-Baudenbach/FE2_Calendar)~~
   *  Route for [FE2_Documentation](https://github.com/FFW-Baudenbach/FE2_Documentation)
 * Added default environment variables
