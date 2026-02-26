@@ -18,6 +18,7 @@ This repository builds a docker container on DockerHub (private registry):
       * ~~Route to dashboard to make it available externally~~
   *  ~~Route for [FE2_Calendar](https://github.com/FFW-Baudenbach/FE2_Calendar)~~
   *  Route for [FE2_Documentation](https://github.com/FFW-Baudenbach/FE2_Documentation)
+  *  Route for Uptime Kuma Monitoring
 * Added default environment variables
 
 ## How to use
